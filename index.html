@@ -1,13 +1,46 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
+    <title>Vite App</title>
   </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+  <body class="outerbody">
+    <div class="outerdiv">
+      <div id="app"></div>
+      <div class="money-layout">
+        <p>Your balance</p>
+        <p>$<span class="total_amount">0</span></p>
+      </div>
+      <div class="expense-layout">
+        <div>
+          <p>INCOME</p>
+          <p class="positive-income">$0</p>
+        </div>
+        <div>
+          <p>EXPENSES</p>
+          <p class="negative-income">$0</p>
+        </div>
+      </div>
+      <div class="history">
+        <p>History</p>
+        <div class="inside-history scroll scroll-view">
+         
+        </div>
+      </div>
+      <div class="new-transaction">
+        <p>Add new transaction</p>
+        <form class="add-form">
+            <p>Text</p>
+          <input class="input-text"/>
+          <p>Amount</p>
+          <p>(negative - expense, positive - income)</p>
+          <input class="input-amount"/>
+          <button>Add transaction</button>
+        </form>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
   </body>
 </html>
